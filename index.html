@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aman Vishwakarma | Aspiring Cybersecurity Professional</title>
+<meta name="description" content="Portfolio of Aman Vishwakarma, an aspiring cybersecurity professional building a foundation in Linux, networking, Kali Linux, Python and ethical hacking through hands-on labs.">
+<meta name="theme-color" content="#0B0D0C">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aman Vishwakarma | Aspiring Cybersecurity Professional">
+<meta property="og:description" content="Learning, practicing and building: Linux, networking and ethical security labs, documented in public.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230B0D0C'/%3E%3Ctext x='5' y='22' font-family='monospace' font-size='16' font-weight='700' fill='%23A7F36B'%3E%3E_%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#0B0D0C;--s:#111513;--b:rgba(255,255,255,.1);--t:#E8ECE9;--m:#A0AAA3;--a:#A7F36B;--mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;--sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(72px + env(safe-area-inset-top,0px));scroll-behavior:smooth;background:radial-gradient(800px 420px at 85% 0,rgba(167,243,107,.07),transparent 70%) no-repeat,var(--bg)}
+body{margin:0;color:var(--t);font:400 16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:rgba(11,13,12,.88);backdrop-filter:blur(10px);z-index:45}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--a);outline-offset:3px;border-radius:6px}
+p{color:var(--m);margin:0 0 1em;max-width:64ch}
+h1,h2,h3{margin:0;font-weight:600}
+h3{font-size:1.05rem}
+ul{margin:0;padding:0;list-style:none}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:var(--a);color:#0B0D0C;padding:8px 12px;border-radius:6px;z-index:60}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:rgba(11,13,12,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--b)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font:500 .95rem var(--mono)}.brand b{color:var(--a)}
+.nav ul{display:flex;gap:26px}
+.nav ul a{color:var(--m);font-size:.92rem;transition:color .2s}.nav ul a:hover{color:var(--t)}
+.burger{display:none;background:none;border:1px solid var(--b);color:var(--t);border-radius:8px;padding:7px 12px;font:500 .85rem var(--mono);cursor:pointer}
+.btn{display:inline-flex;align-items:center;padding:12px 20px;border-radius:8px;border:1px solid var(--b);font-weight:500;font-size:.95rem;transition:border-color .2s,background .2s}
+.btn:hover{border-color:var(--a)}
+.btn.p{background:var(--a);color:#0B0D0C;border-color:var(--a);font-weight:600}.btn.p:hover{background:#bcf88a}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center;padding:96px 0 84px}
+.status{display:inline-flex;align-items:center;gap:10px;font:500 .82rem var(--mono);color:var(--a);border:1px solid rgba(167,243,107,.3);border-radius:6px;padding:5px 12px;margin:0 0 24px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--a);animation:blink 2.4s ease-in-out infinite}
+@keyframes blink{50%{opacity:.25}}
+h1{font-size:clamp(2.6rem,7vw,4.6rem);line-height:1.02;letter-spacing:-.035em;margin:0 0 18px}
+.lead{font-size:clamp(1.05rem,2vw,1.3rem);color:var(--t);font-weight:500;max-width:34ch}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.term{min-width:0;background:var(--s);border:1px solid var(--b);border-radius:12px;overflow:hidden;font:.88rem/1.8 var(--mono)}
+.bar{display:flex;align-items:center;gap:6px;padding:11px 14px;border-bottom:1px solid var(--b);color:var(--m);font-size:.78rem}
+.bar i{width:9px;height:9px;border-radius:50%;background:#2b322e}.bar span{margin-left:8px}
+.tty{padding:18px;min-height:11.5em;color:var(--m);overflow-x:auto}
+.tty .g{color:var(--a)}.tty .o{color:var(--t)}
+.tty::after{content:"";display:inline-block;width:8px;height:1.05em;background:var(--a);vertical-align:-3px;animation:blink 1.1s steps(2) infinite}
+.sec{display:grid;grid-template-columns:200px 1fr;gap:48px;padding:72px 0;border-top:1px solid var(--b)}
+.hd{align-self:start;position:sticky;top:calc(88px + env(safe-area-inset-top,0px))}
+.hd h2{font-size:1.5rem;letter-spacing:-.02em;margin-bottom:8px}
+.hd p{font-size:.9rem}
+.big{font-size:clamp(1.25rem,2.6vw,1.65rem);line-height:1.35;color:var(--t);letter-spacing:-.015em;font-weight:500}
+.grid{display:grid;gap:16px}.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}
+.card{display:block;background:var(--s);border:1px solid var(--b);border-radius:12px;padding:22px;min-width:0}
+a.card{transition:border-color .2s}a.card:hover{border-color:rgba(167,243,107,.5)}
+.card p{max-width:none;font-size:.94rem}
+.row{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:10px}
+.badge{flex:none;font:500 .72rem var(--mono);padding:3px 10px;border-radius:6px;border:1px solid rgba(167,243,107,.4);color:var(--a)}
+.badge.w{border-color:rgba(255,255,255,.22);color:var(--m)}
+.chip{display:inline-block;font:.76rem var(--mono);color:var(--m);border:1px solid var(--b);border-radius:6px;padding:3px 9px;margin:0 6px 6px 0}
+.k{font:500 .78rem var(--mono);color:var(--t);margin:18px 0 8px!important}
+.ticks li{position:relative;padding-left:20px;color:var(--m);margin:6px 0;font-size:.94rem;break-inside:avoid}
+.ticks li::before{content:"";position:absolute;left:0;top:.8em;width:9px;height:1px;background:var(--a)}
+.focus{columns:2;column-gap:32px;margin:6px 0 24px}
+.lnk{display:inline-block;margin-top:18px;color:var(--a);font-weight:500;font-size:.93rem;border-bottom:1px solid rgba(167,243,107,.4)}.lnk:hover{border-color:var(--a)}
+.thumb{position:relative;display:grid;place-items:center;aspect-ratio:16/9;margin-bottom:16px;border:1px solid var(--b);border-radius:8px;overflow:hidden;background:linear-gradient(135deg,#171d19,#0d100e)}
+.thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.thumb small{position:absolute;left:12px;bottom:10px;font:.74rem var(--mono);color:var(--m)}
+.play{position:relative;width:48px;height:48px;border-radius:50%;background:var(--a);display:grid;place-items:center}
+.vid h3{margin-bottom:6px}.vid p{margin:0}
+.sub{margin-top:20px}
+.soc{display:flex;align-items:center;gap:16px}
+.soc svg{color:var(--a);flex:none}.soc b{display:block;font-weight:600}.soc small{color:var(--m);font:.8rem var(--mono);overflow-wrap:anywhere}
+.contact{padding:96px 0;border-top:1px solid var(--b)}
+.contact h2{font-size:clamp(2.1rem,6vw,3.8rem);line-height:1.04;letter-spacing:-.03em;margin-bottom:20px}
+footer{border-top:1px solid var(--b);padding:36px 0;font-size:.9rem}
+.fr{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
+footer p{margin:0 0 4px}footer b{font-weight:600}
+.fl{display:flex;flex-wrap:wrap;gap:20px;align-content:start}.fl a{color:var(--m)}.fl a:hover{color:var(--a)}
+@media(max-width:860px){.hero{grid-template-columns:1fr;padding:72px 0 60px}.sec{grid-template-columns:1fr;gap:24px;padding:56px 0}.hd{position:static}.g3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.burger{display:block}.nav ul{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--b);padding:6px 20px 14px}.nav ul.open{display:flex}.nav ul a{display:block;padding:12px 0}}
+@media(max-width:560px){.g2,.g3{grid-template-columns:1fr}.focus{columns:1}.cta .btn{flex:1 1 100%;justify-content:center}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#top">aman<b>@</b>portfolio</a>
+  <button class="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+  <ul id="menu">
+   <li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li>
+   <li><a href="#videos">Videos</a></li><li><a href="#social">Social</a></li><li><a href="#contact">Contact</a></li>
+  </ul>
+ </div>
+</header>
+<main id="main">
+ <section class="wrap hero" id="top">
+  <div>
+   <p class="status"><span class="dot"></span>Learning • Practicing • Building</p>
+   <h1>Aman Vishwakarma</h1>
+   <p class="lead">Aspiring Cybersecurity Professional | Linux &amp; Networking Fundamentals</p>
+   <p>I’m building my cybersecurity foundation through hands-on Linux practice, networking fundamentals, ethical security labs, and continuous learning. I document my progress through practical projects and educational content.</p>
+   <div class="cta">
+    <a class="btn p" href="#projects">View My Projects</a>
+    <a class="btn" href="#" data-link="github" target="_blank" rel="noopener noreferrer">Explore My GitHub</a>
+    <a class="btn" href="#contact">Connect With Me</a>
+   </div>
+  </div>
+  <div class="term" aria-hidden="true"><div class="bar"><i></i><i></i><i></i><span>~/lab</span></div><div class="tty" id="tty"></div></div>
+ </section>
+
+ <section class="wrap sec" id="about">
+  <div class="hd"><h2>About</h2></div>
+  <div>
+   <p class="big">I’m at the beginning of my cybersecurity journey, and I’m learning it by building.</p>
+   <p>I’m working through Linux and networking from the ground up, practicing in a virtual lab, and writing up what I learn as projects and videos so my progress is visible. I stay ethical: I only practice in environments I own or have permission to use.</p>
+   <p class="k">Current focus</p>
+   <ul class="ticks focus">
+    <li>Linux command-line fundamentals</li><li>Networking concepts</li><li>Kali Linux in a virtual lab</li>
+    <li>Beginner Python programming</li><li>Ethical hacking fundamentals</li><li>Documenting practical learning</li>
+   </ul>
+   <span class="chip">Consistency</span><span class="chip">Curiosity</span><span class="chip">Ethical conduct</span><span class="chip">Learning by building</span>
+  </div>
+ </section>
+
+ <section class="wrap sec" id="skills">
+  <div class="hd"><h2>Skills</h2><p>Currently learning, grouped by how far along each area is.</p></div>
+  <div class="grid g2" id="skills-list"></div>
+ </section>
+
+ <section class="wrap sec" id="projects">
+  <div class="hd"><h2>Projects and labs</h2><p>Starter projects. Each links to my GitHub until its own repository is ready.</p></div>
+  <div class="grid g2" id="proj-list"></div>
+ </section>
+
+ <section class="wrap sec" id="videos">
+  <div class="hd"><h2>Featured videos</h2><p>Beginner Linux tutorials, terminal practice, and ethical cybersecurity learning.</p></div>
+  <div>
+   <div class="grid g3" id="vid-list"></div>
+   <a class="btn p sub" href="#" data-link="youtube" target="_blank" rel="noopener noreferrer">Subscribe on YouTube</a>
+  </div>
+ </section>
+
+ <section class="wrap sec" id="social">
+  <div class="hd"><h2>Social profiles</h2></div>
+  <div class="grid g2" id="soc-list"></div>
+ </section>
+
+ <section class="wrap contact" id="contact">
+  <!-- Add an email address or other contact details here only when you want to share them. -->
+  <h2>Let’s Connect and Build.</h2>
+  <p>I’m interested in connecting with fellow learners, sharing knowledge, developing practical projects, and exploring entry-level opportunities as I continue building my cybersecurity skills.</p>
+  <a class="btn p" href="#" data-link="linkedin" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+ </section>
+</main>
+<footer>
+ <div class="wrap fr">
+  <div><p><b>Aman Vishwakarma</b></p><p>© <span id="yr"></span> Aman Vishwakarma</p><p>Ethical Learning • Authorized Labs Only</p></div>
+  <nav class="fl" id="foot-links" aria-label="Social links"></nav>
+ </div>
+</footer>
+
+<script>
+/* ====== EDIT YOUR CONTENT HERE ====== */
+const SITE={
+ github:"https://github.com/aman-452001",
+ youtube:"https://youtube.com/@michaelblackhack?si=5Y4WB3OSqlWRom-H",
+ instagram:"https://instagram.com/why.draxy",
+ linkedin:"https://www.linkedin.com/in/amanvish88688"
+};
+const SKILLS=[
+ {name:"Beginner foundations",tag:"Beginner",cls:"",note:"Concepts and commands I practice regularly.",
+  items:["Linux commands and terminal navigation","Networking fundamentals: IP addresses, DNS, gateways, and ARP","Kali Linux lab environment"]},
+ {name:"Still in progress",tag:"In progress",cls:"w",note:"Areas I’ve started and am still working through.",
+  items:["File permissions and basic shell scripting","Python programming fundamentals","Git and GitHub"]}
+];
+/* repo: add a project's GitHub URL when it exists. status: "In Progress" or "Completed". */
+const PROJECTS=[
+ {t:"Linux Command Practice",status:"In Progress",repo:"",d:"Beginner Linux command exercises covering directories, files, navigation, and text processing.",
+  tech:["Linux","Bash","Terminal"],learn:["Moving around the filesystem","Creating and managing files and directories","Searching and processing text"]},
+ {t:"Networking Fundamentals Lab",status:"In Progress",repo:"",d:"Documented practice with IP configuration, DNS lookups, ping, gateways, and ARP tables in an authorized lab environment.",
+  tech:["Linux","ping","DNS lookups","ARP"],learn:["How IP addressing and gateways work","How DNS resolves names","Reading ARP tables in a lab"]},
+ {t:"Beginner Shell Scripting",status:"In Progress",repo:"",d:"Simple scripts and terminal exercises created to understand automation and Linux workflows.",
+  tech:["Bash","Linux","Automation"],learn:["Writing and running small scripts","Automating repeated terminal tasks","Reading and fixing script errors"]},
+ {t:"Python for Beginners",status:"In Progress",repo:"",d:"Small beginner Python exercises demonstrating variables, input/output, conditions, loops, and functions as they are completed.",
+  tech:["Python"],learn:["Variables and input/output","Conditions and loops","Writing simple functions"]}
+];
+/* id: the 11-character YouTube video ID. url: full video link. Leave both empty to link to the channel. */
+const VIDEOS=[
+ {t:"Explore the Channel",tag:"beginner linux tutorials",id:"",url:"",d:"Beginner-friendly Linux lessons and terminal walkthroughs."},
+ {t:"Featured Video — Update Link",tag:"terminal practice",id:"",url:"",d:"Hands-on terminal practice. Replace with a real video link."},
+ {t:"Featured Video — Update Link",tag:"ethical learning",id:"",url:"",d:"Ethical cybersecurity learning. Replace with a real video link."}
+];
+const SOCIALS=[
+ ["GitHub","github","github.com/aman-452001",'<path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>',0],
+ ["YouTube","youtube","@michaelblackhack",'<path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>',0],
+ ["Instagram","instagram","@why.draxy",'<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>',1],
+ ["LinkedIn","linkedin","linkedin.com/in/amanvish88688",'<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>',0]
+];
+/* ====== END OF CONTENT ====== */
+
+const X='target="_blank" rel="noopener noreferrer"',$=s=>document.querySelector(s);
+const ico=(p,s)=>`<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" ${s?'fill="none" stroke="currentColor" stroke-width="1.8"':'fill="currentColor"'}>${p}</svg>`;
+const PLAY='<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#0B0D0C"/></svg>';
+document.querySelectorAll("[data-link]").forEach(a=>a.href=SITE[a.dataset.link]);
+$("#skills-list").innerHTML=SKILLS.map(g=>`<div class="card"><div class="row"><h3>${g.name}</h3><span class="badge ${g.cls}">${g.tag}</span></div><p>${g.note}</p><ul class="ticks">${g.items.map(i=>`<li>${i}</li>`).join("")}</ul></div>`).join("");
+$("#proj-list").innerHTML=PROJECTS.map(p=>`<article class="card"><div class="row"><h3>${p.t}</h3><span class="badge ${p.status==="Completed"?"":"w"}">${p.status}</span></div><p>${p.d}</p><p class="k">Technologies</p><div>${p.tech.map(t=>`<span class="chip">${t}</span>`).join("")}</div><p class="k">What I’m learning</p><ul class="ticks">${p.learn.map(l=>`<li>${l}</li>`).join("")}</ul><a class="lnk" href="${p.repo||SITE.github}" ${X}>${p.repo?"View repository":"Visit my GitHub"}</a></article>`).join("");
+$("#vid-list").innerHTML=VIDEOS.map(v=>`<a class="card vid" href="${v.url||SITE.youtube}" ${X}><div class="thumb">${v.id?`<img src="https://i.ytimg.com/vi/${v.id}/hqdefault.jpg" alt="" loading="lazy">`:`<small>${v.tag}</small>`}<span class="play">${PLAY}</span></div><h3>${v.t}</h3><p>${v.d}</p></a>`).join("");
+$("#soc-list").innerHTML=SOCIALS.map(s=>`<a class="card soc" href="${SITE[s[1]]}" ${X}>${ico(s[3],s[4])}<span><b>${s[0]}</b><small>${s[2]}</small></span></a>`).join("");
+$("#foot-links").innerHTML=SOCIALS.map(s=>`<a href="${SITE[s[1]]}" ${X}>${s[0]}</a>`).join("");
+$("#yr").textContent=new Date().getFullYear();
+
+/* Mobile menu and smooth in-page navigation */
+const menu=$("#menu"),burger=$(".burger");
+burger.onclick=()=>burger.setAttribute("aria-expanded",menu.classList.toggle("open"));
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener("click",e=>{
+ const id=a.getAttribute("href"),t=id.length>1&&$(id);
+ if(t){e.preventDefault();t.scrollIntoView({behavior:"smooth"});menu.classList.remove("open");burger.setAttribute("aria-expanded","false")}
+}));
+
+/* Hero terminal: one typed sequence on load */
+(async()=>{
+ const TERM=[["whoami","aman-vishwakarma"],["cat focus.txt","linux, networking, python"],["echo $LAB_RULES","authorized-only"]];
+ const tty=$("#tty"),fast=matchMedia("(prefers-reduced-motion:reduce)").matches,w=ms=>fast?0:new Promise(r=>setTimeout(r,ms));
+ for(const [cmd,out] of TERM){
+  const row=document.createElement("div"),s=document.createElement("span");
+  row.innerHTML='<span class="g">$</span> ';row.append(s);tty.append(row);
+  for(const ch of cmd){s.textContent+=ch;await w(45)}
+  await w(260);
+  const o=document.createElement("div");o.className="o";o.textContent=out;tty.append(o);await w(420);
+ }
+})();
+</script>
+</body>
+</html>
